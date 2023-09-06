@@ -20,3 +20,7 @@ SELECT * FROM animals;
 COMMIT;
 SELECT * FROM animals;
 
+BEGIN;
+DELETE FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
