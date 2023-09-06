@@ -72,7 +72,6 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **query and update animals table.**
 - [ ] **query multiple tables**
 - [ ] **add "join table" for visits**
 - [ ] **database performance audit**
