@@ -12,3 +12,5 @@ VALUES ('Charmander','2020-02-08',0,FALSE,-11),
        ('Boarmon','2005-06-07',7,TRUE,20.4),
        ('Blossom','1998-10-13',3,TRUE,17),
        ('Ditto','2022-05-14',4,TRUE,22);
+
+INSERT INTO species(name) VALUES ('Pokemon'),('Digimon');
