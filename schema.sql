@@ -34,3 +34,10 @@ CREATE TABLE vets(
   date_of_graduation DATE,
   PRIMARY KEY (id)
   );
+
+CREATE TABLE specializations(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  species_id INT REFERENCES species(id),
+  vets_id INT REFERENCES vets(id),
+  PRIMARY KEY (id)
+  );
