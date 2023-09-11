@@ -194,3 +194,8 @@ WHERE vets.name = 'Maisy Smith'
 GROUP BY species.name
 ORDER BY speciality DESC
 LIMIT 1;
+
+CREATE INDEX idx_animals_id ON visits (animals_id);
+CREATE INDEX idx_vets_id ON visits (vets_id);
+CREATE INDEX idx_email ON owners (email);
+
