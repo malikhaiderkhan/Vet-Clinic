@@ -195,10 +195,6 @@ GROUP BY species.name
 ORDER BY speciality DESC
 LIMIT 1;
 
-CREATE INDEX idx_animals_id ON visits (animals_id);
-CREATE INDEX idx_vets_id ON visits (vets_id);
-CREATE INDEX idx_email ON owners (email);
-
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
 EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
 EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
