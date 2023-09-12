@@ -37,3 +37,10 @@ CREATE TABLE invoice_items(
   treatment_id INT REFERENCES treatments(id),
   PRIMARY KEY (id)
 );
+
+CREATE TABLE medical_join_treatment(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  invoice_id INT REFERENCES invoices(id),
+  treatment_id INT REFERENCES treatments(id),
+  PRIMARY KEY (id)
+);
