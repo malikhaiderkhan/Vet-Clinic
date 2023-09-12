@@ -72,10 +72,7 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **query multiple tables**
-- [ ] **add "join table" for visits**
-- [ ] **database performance audit**
-- [ ] **add database schema diagram.**
+- [ ] **will add some more features**
 
 <!-- CONTRIBUTING -->
 
