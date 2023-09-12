@@ -40,7 +40,7 @@ CREATE TABLE invoice_items(
 
 CREATE TABLE medical_join_treatment(
   id INT GENERATED ALWAYS AS IDENTITY,
-  invoice_id INT REFERENCES invoices(id),
+  medical_history_id INT REFERENCES medical_histories(id),
   treatment_id INT REFERENCES treatments(id),
   PRIMARY KEY (id)
 );
