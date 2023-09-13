@@ -44,3 +44,11 @@ CREATE TABLE medical_join_treatment(
   treatment_id INT REFERENCES treatments(id),
   PRIMARY KEY (id)
 );
+
+CREATE INDEX idx_patient_id ON medical_histories(patient_id);
+CREATE INDEX idx_invoice_id ON invoice_items(invoice_id);
+CREATE INDEX idx_treatment_id ON invoice_items(treatment_id);
+CREATE INDEX idx_medical_history_id ON invoices(medical_history_id);
+CREATE INDEX idx_medical_history_id2 ON medical_join_treatment(medical_history_id);
+CREATE INDEX idx_treatment_id2 ON medical_join_treatment(treatment_id);
+
